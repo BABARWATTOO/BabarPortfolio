@@ -1,0 +1,324 @@
+/* Skills.css */
+:root {
+    --primary: #6e45e2;
+    --secondary: #88d3ce;
+    --dark: #0f0a31;
+    --light: #f8f9fa;
+    --text: #e2e2e2;
+    --text-muted: #a1a1a1;
+    --card-bg: rgba(30, 20, 70, 0.4);
+  }
+  
+  .skills-section {
+    padding: 5rem 2rem;
+    background: linear-gradient(135deg, var(--dark) 0%, #1a0a6e 100%);
+    color: var(--text);
+    overflow: hidden;
+  }
+  
+  .skill-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .skills-header {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+  
+  .skills-subheading {
+    color: var(--secondary);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+  
+  .skills-heading {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 800;
+    margin-bottom: 1rem;
+    background: linear-gradient(90deg, var(--light), var(--secondary));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  
+  .skills-description {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+  
+  .skills-row {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .first-row {
+    margin-bottom: 3rem;
+  }
+  
+  .skills-box {
+    background: rgba(15, 7, 75, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.3s ease;
+  }
+  
+  .skills-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+  }
+  
+  .small-box {
+    flex: 0 0 25%;
+  }
+  
+  .large-box {
+    flex: 0 0 70%;
+    width: 70%;
+    
+  }
+  
+  .wide-box {
+    flex: 0 0 70%;
+  }
+  
+  .location-box {
+    flex: 0 0 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .skills-title {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--light);
+  }
+  
+  .icon {
+    color: var(--secondary);
+    font-size: 1.3rem;
+  }
+  
+  .skills-text {
+    color: var(--text-muted);
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+  }
+  
+  .book-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  
+  .book-image img {
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Skills Scroll Styles */
+  .skills-scroll-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin: 0.5rem 0;
+  }
+  
+  .top-scroll {
+    margin-bottom: 1.5rem;
+  }
+  
+  .bottom-scroll {
+    margin-top: 1.5rem;
+  }
+  
+  .skills-scroll-track {
+    display: flex;
+    gap: 1.5rem;
+    width: max-content;
+    will-change: transform;
+  }
+  
+  .skill-item {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    background: rgba(255, 255, 255, 0.08);
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+  }
+  
+  .skill-item:hover {
+    transform: scale(1.05);
+    background: rgba(110, 69, 226, 0.2);
+  }
+  
+  .skill-icon {
+    font-size: 1.5rem;
+    color: var(--skill-color, var(--secondary));
+  }
+  
+  .skill-name {
+    font-size: 0.95rem;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+  
+  /* Hobbies Section */
+  .hobbies-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-top: 1rem;
+  }
+  
+  .hobby-tag {
+    background: rgba(136, 211, 206, 0.1);
+    color: var(--secondary);
+    padding: 0.5rem 1.2rem;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    cursor: default;
+    border: 1px solid rgba(136, 211, 206, 0.2);
+    transition: all 0.3s ease;
+  }
+  
+  .hobby-tag:hover {
+    background: rgba(136, 211, 206, 0.2);
+  }
+  
+  /* Location Section */
+  .location-icon {
+    font-size: 2.5rem;
+    color: var(--secondary);
+    margin-bottom: 1rem;
+  }
+  
+  .location-text {
+    font-size: 1.1rem;
+    color: var(--text);
+    margin-bottom: 1.5rem;
+  }
+  
+  .map-pin {
+    width: 100%;
+    height: 120px;
+    background: linear-gradient(135deg, rgba(110, 69, 226, 0.1), rgba(136, 211, 206, 0.1));
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .map-pin::after {
+    content: '📍';
+    font-size: 2rem;
+    position: absolute;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 992px) {
+    .skills-row {
+      flex-direction: column;
+    }
+    
+    .small-box, .large-box, .wide-box, .location-box {
+      flex: 1 1 100%;
+    }
+    
+    .skills-scroll-track {
+      gap: 1rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .skills-section {
+      padding: 3rem 1.5rem;
+    }
+    
+    .skills-header {
+      margin-bottom: 2rem;
+    }
+    
+    .skills-box {
+      padding: 1.5rem;
+    }
+    
+    .skill-item {
+      padding: 0.6rem 1rem;
+    }
+    
+    .hobby-tag {
+      padding: 0.4rem 0.8rem;
+    }
+    .large-box {
+        flex: 0 0 100%;
+        width: 100%;
+        
+      }
+  }
+
+
+  .services-heading {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 16px;
+  }
+  
+  .services-icon {
+    color: #88d3ce;
+    font-size: 1.4rem;
+  }
+  
+  .services-text {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: white;
+  }
+  .tech-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+  }
+  
+  .tech-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .tech-icon {
+    color: #8b5cf6; /* Purple shade */
+    font-size: 1.5rem;
+  }
+  
+  .tech-text {
+    font-size: 1rem;
+    color: white;
+  }
+  

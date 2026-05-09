@@ -1,0 +1,17 @@
+.head{
+  font-size: 22vmin;
+  font-family: Montserrat;
+  font-weight: bolder;
+}
+
+
+.app-wrapper {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.snap-section {
+  scroll-snap-align: start;
+  min-height: 100vh;
+}
